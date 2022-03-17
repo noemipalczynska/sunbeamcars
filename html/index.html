@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="/css/style.css">
+
+    <title>SunbeamCars</title>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <header class="navbar">
+        <div class="logo">
+            <a href="index.html">
+                <h1>SunbeamCars</h1>
+            </a>
+        </div>
+
+        <ul class="nav">
+            <li><a href="#LOG IN">LOG IN</a></li>
+        </ul>
+        <ul class="loginicon">
+            <li></li>
+        </ul>
+        <ul class="nav">
+            <li><a href="/html/about_us.html">About us</a></li>
+        </ul>
+    </header>
+
+
+    <!-- Hero Image -->
+
+    <!-- Input -->
+
+    <section class="herobox">
+        <form class="form-container" id="form">
+
+            <h1 class="form-title">Find the car <br>that suits you</h1><br><br>
+
+            <section class="form">
+                <div class="grid-table">
+
+                    <div class="grid-element">
+                        <label for="start">I pick it up:</label>
+                        <input id="date-start" name="date-start" type="date" value="2022-03-08" min="2022-02-08"
+                            max="2023-03-08" required />
+                    </div>
+
+                    <div class="grid-element">
+                        <label for="date-end">I bring it back:</label>
+                        <input id="date-end" name="date-end" type="date" value="2022-03-10" required min="2022-02-08"
+                            max="2023-03-10" />
+                        <br>
+                    </div>
+
+                    <div class="grid-element">
+                        <label for="num-persons">Number of Persons: </label>
+                        <input id="num-persons" name="num-persons" type="number" min="1" max="7" step="1" required />
+                        <br>
+                    </div>
+
+                    <div class="grid-element">
+                        <label for="num-suitcases">Number of Suitcases:</label>
+                        <select id="num-suitcases" name="suitcases">
+                            <option value="0">0 - only a bag</option>
+                            <option value="1">1 suitcase</option>
+                            <option value="2">2 suitcases</option>
+                            <option value="3">3 suitcases</option>
+                            <option value="4">4 suitcases</option>
+                        </select>
+                    </div>
+
+                    <button class="button-input" type="submit" id="search-btn">SEARCH</button>
+
+                </div>
+            </section>
+        </form>
+    </section>
+
+
+    <!-- Containers -->
+    <section>
+        <div id="cars"></div>
+    </section>
+
+    <section id="error">
+    </section>
+
+    <script src="/js/data.js"></script>
+    <script src="/js/javascript.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="/css/style.css">
+
+    <title>SunbeamCars Accessories</title>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <header class="navbar">
+        <div class="logo">
+            <a href="/html/index.html">
+                <h1>SunbeamCars</h1>
+            </a>
+        </div>
+
+        <ul class="nav">
+            <li><a href="#LOG IN">LOG IN</a></li>
+        </ul>
+        <ul class="loginicon">
+            <li></li>
+        </ul>
+        <ul class="nav">
+            <li><a href="/html/about_us.html">About us</a></li>
+        </ul>
+    </header>
+
+
+    <!-- Hero Image -->
+
+    <!-- Input -->
+
+    <section class="herobox-2"> </section>
+
+    <section class="content-accessories">
+        <div class="chosen">
+            <h2>Well chosen</h2>
+            <div id="chosen"></div>
+        </div>
+
+        <form id="form-2">
+            <fieldset>
+                <h2>Select Accessories (excl. VAT)</h2>
+                <br>
+
+                <input type="checkbox" data-item="Second Driver" class="slist" value="199,00"
+                    onchange="calculateTotal(this, this.value)"><span> Second Driver dkr. 199,00</span><br>
+
+                <input type="checkbox" data-item="Child Seat" class="slist" value="155,00"
+                    onchange="calculateTotal(this, this.value)"><span> Child Seat (5-12 year) dkr. 155,00</span><br>
+
+                <input type="checkbox" data-item="Roadside" class="slist" value="120,00"
+                    onchange="calculateTotal(this, this.value)"><span> Roadside Aid dkr. 120,00</span><br>
+
+                <input type="checkbox" data-item="Baby Seat" class="slist" value="100,00"
+                    onchange="calculateTotal(this, this.value)"><span> Baby seat (0-1year) dkr. 100,00</span><br>
+
+                <input type="checkbox" data-item="Child Seat 2" class="slist" value="140,00"
+                    onchange="calculateTotal(this, this.value)"><span> Child seat (1-4 year) dkr. 140,00</span><br>
+
+                <input type="checkbox" data-item="GPS" class="slist" value="250,00"
+                    onchange="calculateTotal(this, this.value)"> <span> GPS navigation dkr. 250,00</span><br>
+
+                <input type="checkbox" data-item="Snow Chains" class="slist" value="188,00"
+                    onchange="calculateTotal(this, this.value)">
+                <span>Snow chains dkr. 188,00</span><br>
+
+                <button class="button" type="submit">Continue</button>
+
+            </fieldset>
+        </form>
+
+        <div class="all-inclusive">
+            <h2>All inclusive</h2>
+            <br>
+            <div id="totaloutput"></div>
+            <br>
+
+        </div>
+    </section>
+
+    <script src="/js/accessories.js"></script>
+
+</body>
+
+</html>

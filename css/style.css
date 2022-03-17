@@ -1,0 +1,685 @@
+/* Reset Default-Settings */
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+body{
+    background-color: white;
+    color:#333;
+    line-height: 1.6em;
+}
+
+a{
+    color:#333;
+    text-decoration: none;
+}
+
+
+h1{
+    font-family: Helvetica;
+    font-weight: 400;
+    font-size: 2.5em;
+    text-align: left;
+    line-height: normal;
+    margin-top: 4%;
+}
+
+h2{
+ font-family: Helvetica;
+ font-weight: 200;
+ text-transform: uppercase;
+ font-size: 1.8em;
+ color: black;
+}
+
+p{
+   font-family: Helvetica;
+   font-weight: 300;
+   font-style: normal;
+    font-size: 1.2em;
+}
+
+/* Navbar */
+.navbar{
+  position: fixed;
+  top:0px;
+  padding:0px;
+  z-index: 10;
+  filter: drop-shadow(2px 2px 2px #2828292c);
+  width: 100%;
+}
+
+header{
+  background:white;
+  height: 70px;
+}
+
+header *{
+  color: black;
+  text-transform: uppercase;  
+}
+
+header .logo {
+  float:left;
+  height:inherit;
+  margin-left: 2em;
+}
+
+
+header ul{
+  float:right;
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+  font-size: 1em;
+ 
+}
+
+header ul li{
+  float:left;
+  position: relative;
+  
+}
+
+header ul li a {
+  display: block;
+  padding: 2px 20px;
+  margin: 20px 0px;
+  text-decoration: none;
+  font-family: Helvetica;
+  font-weight: 600;
+  font-style: normal;
+  text-transform: uppercase;
+  font-size: 2em;
+}
+
+.loginicon{
+  background-image: url(/img/login_black_24dp.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 3em;
+  height: 4em;
+}
+
+/* _________________ */
+
+/* Hero */
+
+.herobox {
+  width: 100%;
+  background-image: url("/img/car_hero.jpg");
+  background-size: cover;
+  background-position: center;
+  display:flex;
+  flex-direction:row;
+  width:100%;
+  height: 100vh;
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px;
+  margin-left: 50px;
+  background-color: #00000093;
+  color: white;
+  height: 50vh;
+  margin-top: 10%;
+  margin-left: 5%;
+}
+
+.grid-table {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+}
+.grid-element {
+  display: flex;
+  color: white;
+  font-family: Helvetica;
+  font-weight: 200;
+}
+
+input#num-persons{
+  width:5.5rem;
+}
+
+button {
+  padding: 0px 5px;
+  margin-top: 5%;
+  width:8rem;
+  height: 2rem;
+  font-family: Helvetica;
+  font-weight: 600;
+}
+
+
+/* List*/
+
+.container-car{
+  display: flex;
+  height: 100%;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-left: 10%;
+  padding-right: 10%;;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.137);
+  border-top:1px solid rgba(0, 0, 0, 0.137);
+  flex-direction: row;
+}
+
+.cars {
+  display: flex;
+  width: 25rem;
+  height: 10rem;
+  justify-content: space-around;
+  /* border: 2px solid black; */
+  margin-bottom: 20px;
+  margin-top: 20px;
+  align-items: center;
+}
+
+.image {
+  width: 100%;
+}
+
+
+.button-car {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1em;
+  font-weight: 800;
+  color: black;
+  border: 1px solid black;
+  width:200%;
+  padding: 10px 10px;
+  margin-top: 5%;
+}
+
+.button-car:hover{
+  color:white;
+  background-color:black;
+
+ 
+}
+
+.names h2{
+  margin-top: 40%;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 500;
+  /* border:1px solid green; */
+}
+
+.content{
+  margin-top: 3%;
+}
+
+/*__________________ Accessories Page */
+
+/* Hero Image */
+
+.herobox-2 {
+  width: 100%;
+  background-image: url("/img/car_hero.jpg");
+  background-size: 100%;
+  background-position:center;
+  display:flex;
+  width:100%;
+  height: 40vh;
+}
+
+.content-accessories{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.chosen{
+  margin-top: 3%;
+  border: 1px solid none;
+  padding: 30px;
+  margin: 2%;
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.2em;
+}
+
+.chosen h2{
+  font-size: 1.8em;
+  font-weight: 100;
+  color:rgb(126, 126, 126);
+  
+}
+
+#chosen{
+  margin-top: 10%;
+}
+
+.accessories{
+  background-color: rgba(223, 216, 216, 0.639);
+  padding: 2%;
+}
+
+.all-inclusive{
+  margin-top: 3%;
+  padding: 30px;
+  margin: 2%;
+  background-color: #000000;
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.2em;
+  color: white;
+}
+
+.all-inclusive h2{
+  font-size: 1em;
+  font-weight: 400;
+  color:rgb(255, 255, 255);
+}
+
+#form-2{
+  margin-top: 3%;
+  padding: 30px;
+  margin: 2%;
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.2em;
+}
+
+#form-2 h2{
+  font-size: 1.8em;
+  font-weight: 100;
+  color:rgb(126, 126, 126);
+}
+
+fieldset{
+  border:none;
+}
+
+.button{
+  color: rgb(0, 0, 0);
+  border: 1px solid black;
+  background-color: white;
+  font-size: 0.8em;
+  font-weight: 400;
+  cursor: pointer;
+}
+
+.button:hover{
+  color: rgb(255, 255, 255);
+  border: 1px solid black;
+  background-color: rgb(0, 0, 0);
+}
+
+  /* _________________Customer */
+
+  .rental-information{
+    margin-top: 3%;
+    padding: 2%;
+    padding: 30px;
+    margin: 2%;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+  }
+    
+  .rental-information h2{
+    font-size: 1.8em;
+    font-weight: 100;
+    color:rgb(126, 126, 126);
+    
+  }
+
+  .content-customer{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  #form-customer{
+   padding: 2%;
+   padding: 30px;
+   margin: 2%;
+   box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+  }
+
+  #form-customer h2{
+    font-size: 1.8em;
+    font-weight: 100;
+    color:rgb(126, 126, 126);
+    margin-bottom: 15%;
+  }
+
+  #form-customer input{
+    /* background-color: #000000; */
+    border: 1px solid  black;
+    width: 100%;
+    height: 6%;
+  }
+
+
+    /* Customer accessories */
+
+    .accessories{
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 1.2em;
+      background-color: white;
+    }
+
+
+    /* Receipt */
+
+.receipt{
+  padding: 30px;
+  margin: 2%;
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.receipt h2{
+  font-size: 1.8em;
+  font-weight: 100;
+  color:rgb(126, 126, 126);
+ 
+}
+
+    /* About-Us _____________________________________*/
+
+    /* test */
+
+    section.accordeon-animated-1{
+      /* border:1px solid green; */
+      display: flex;
+      justify-content: space-around;
+   
+    }
+
+    section.accordeon-animated-2{
+      /* border:1px solid blue; */
+      display: flex;
+      justify-content: center;
+      width:100vw;
+      height:60vh;
+      z-index: 1;
+      background-color: white;
+      margin-top: 5%;
+      padding-top: 2%;
+    }
+
+   .accordeon-animated{
+     display: flex;
+     flex-direction:column;
+     width:31vw; 
+     margin:1%;
+   }
+
+    .accordion-animated {
+      background-color: #eee;
+      color: #444;
+      cursor: pointer;
+      padding: 20px;
+      width: 100%;
+      border: none;
+      text-align: left;
+      outline: none;
+      font-size: 15px;
+      transition: 0.4s;
+      margin: 1%;
+      padding-bottom: 6%;
+      /* border: 1px solid orange; */
+    }
+    
+    .active, .accordion-animated:hover {
+      background-color: #ccc;
+    }
+
+    .accordion-animated:after {
+      content: '\002B';
+      color: #777;
+      font-weight: bold;
+      float: right;
+      margin-left: 5px;
+    }
+    
+    .active:after {
+      content: "\2212";
+    }
+    
+    .panel-animated {
+      padding: 0 18px;
+      background-color: white;
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.2s ease-out;
+    }
+
+    /* Fade in Text */
+    section.about-us-text{
+      margin-top: 2%;
+      /* border:1px solid red; */
+      display: flex;
+      justify-content:flex-start;
+    }
+
+   .about-us-text-2 {
+    
+     display: flex;
+     width:30vw;
+     margin-left: 10%;
+     z-index: 1;
+   }
+
+   .scrollFade {
+    opacity: 1;
+    pointer-events: all;
+  }
+  
+  .scrollFade--hidden {
+    opacity: 0;
+    pointer-events: none;
+  }
+  
+  .scrollFade--visible {
+    opacity: 1;
+    pointer-events: all;
+  }
+  
+  .scrollFade--animate {
+    transition: opacity 1s ease-in-out;
+  }
+
+
+/* Outline Logo */
+
+  
+.container {
+  width: 60%;
+  max-width: 1200px;
+  margin: 0% auto 0;
+  text-align: center;  
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  z-index: 2;
+}
+
+#sezam-loader .st0{
+  fill:#000000;
+}
+
+#sezam-loader .st1{
+  fill:#ffffff;
+}
+
+#sezam-loader .st0,
+#sezam-loader .st1 {
+  -webkit-animation: draw 4000ms ease-in-out infinite; /* Safari 4+ */
+  -moz-animation:    draw 4000ms ease-in-out infinite; /* Fx 5+ */
+  -o-animation:      draw 4000ms ease-in-out infinite; /* Opera 12+ */
+  animation:         draw 4000ms ease-in-out infinite;
+  stroke: #000000;
+ 
+}
+
+@-webkit-keyframes draw {
+  0% {
+    stroke-dasharray: 0 800;
+    stroke-dashoffset: 200;
+    fill-opacity: 0;
+    stroke-width: 1;
+  }
+  37% {
+    stroke-dasharray: 600 0;
+    stroke-dashoffset: 200;
+    fill-opacity: 0;
+    stroke-width: 1;
+  }
+  50% {
+    fill-opacity: 1;
+    stroke-width: 0;
+  }
+  100% {
+    fill-opacity: 1;
+    stroke-width: 0;
+  }
+}
+
+@-moz-keyframes draw {
+  0% {
+    stroke-dasharray: 0 800;
+    stroke-dashoffset: 200;
+    fill-opacity: 0;
+    stroke-width: 1;
+  }
+  37% {
+    stroke-dasharray: 600 0;
+    stroke-dashoffset: 200;
+    fill-opacity: 0;
+    stroke-width: 1;
+  }
+  50% {
+    fill-opacity: 1;
+    stroke-width: 0;
+  }
+  100% {
+    fill-opacity: 1;
+    stroke-width: 0;
+  }
+}
+@-o-keyframes draw {
+  0% {
+    stroke-dasharray: 0 800;
+    stroke-dashoffset: 200;
+    fill-opacity: 0;
+    stroke-width: 1;
+  }
+  37% {
+    stroke-dasharray: 600 0;
+    stroke-dashoffset: 200;
+    fill-opacity: 0;
+    stroke-width: 1;
+  }
+  50% {
+    fill-opacity: 1;
+    stroke-width: 0;
+  }
+  100% {
+    fill-opacity: 1;
+    stroke-width: 0;
+  }
+}
+@keyframes draw {
+  0% {
+    stroke-dasharray: 0 800;
+    stroke-dashoffset: 200;
+    fill-opacity: 0;
+    stroke-width: 1;
+  }
+  37% {
+    stroke-dasharray: 600 0;
+    stroke-dashoffset: 200;
+    fill-opacity: 0;
+    stroke-width: 1;
+  }
+  50% {
+    fill-opacity: 1;
+    stroke-width: 0;
+  }
+  100% {
+    fill-opacity: 1;
+    stroke-width: 0;
+  }
+}
+
+  /* svg animation*/
+
+  .line-container{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    text-align: center;
+    overflow:hidden;
+  }
+
+  svg{
+    display: inline-block;
+    height:100%;
+  }
+
+  section.one {
+    height:100vh;
+    display:grid;
+    place-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 4em;
+  }
+
+  section.two {
+    height:100vh;
+    display:grid;
+    place-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 4em;
+  }
+
+  .one{
+    background-color: white;
+    background-size: cover;
+   
+  }
+
+  .two{
+    font-size: 3em;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    color: black;
+  }
+
+  .two p{
+    position: absolut;
+    color: rgba(0, 0, 0, 0.154);
+    top:10%;
+    left:30%;
+    white-space:nowrap;
+    font-size:10rem;
+    font-size: 1.5em;
+  }
+
+  .one h2{
+    font-size:2em;
+    color: #000000;
+    font-weight: 400;
+
+  }
+
+
